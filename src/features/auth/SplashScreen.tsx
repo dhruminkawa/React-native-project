@@ -1,11 +1,19 @@
 import { View, Text, Image } from 'react-native';
-import React from 'react';
+import React, { FC, useEffect } from 'react';
 import { splashStyles } from '@unistyles/authStyles';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import CustomText from '@components/global/CustomText';
+import { resetAndNavigate } from '@utils/NavigationUtils';
 
 
-const SplashScreen = () => {
+const SplashScreen: FC = () => {
+
+  useEffect(()=>{
+     const timeoutId= setTimeout(()=>{
+      resetAndNavigate('LoginScreen');
+     },3000)
+     return ()=>clearTimeout(timeoutId)
+  },[]);
   return (
     <View style={splashStyles.container}>
       {/* <Text style={splashStyles.msgText}>SplashScreen</Text> */}
@@ -30,7 +38,7 @@ const SplashScreen = () => {
           From Kitchen to doorstep, your cravings, delivered!
          </CustomText>
           
-
+          
       </Animated.View>
     </View>
   );
