@@ -1,9 +1,9 @@
 import { createContext, FC, ReactNode, useContext } from "react";
-import Animated, { useSharedValue, withTiming } from "react-native-reanimated"
+import  { SharedValue, useSharedValue, withTiming } from "react-native-reanimated"
 
 interface SharedStateContextType {
-    scrollY:Animated.SharedValue<number>
-    scrollYGlobal: Animated.SharedValue<number>;
+    scrollY:SharedValue<number>
+    scrollYGlobal: SharedValue<number>;
     scrollToTop: () => void
 }
 

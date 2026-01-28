@@ -15,17 +15,18 @@
 // }))
 
 
+
 // import { StyleSheet, ViewStyle, ImageStyle } from 'react-native';
 // import { defaultTheme } from './unistyles';
 
 // const { colors, device } = defaultTheme;
 
 // export const emptyStyles = StyleSheet.create({
-//   container: {
+//   container: (isLive: boolean = false) => ( {
 //     flex: 1,
 //     justifyContent: 'center',
 //     alignItems: 'center',
-//     backgroundColor: colors.background, // default, will override in component
+//     backgroundColor: colors.background,
 //   } as ViewStyle,
 
 //   emptyImage: {
@@ -36,8 +37,7 @@
 // });
 
 
-
-import { StyleSheet, ViewStyle, ImageStyle } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { defaultTheme } from './unistyles';
 
 const { colors, device } = defaultTheme;
@@ -48,11 +48,11 @@ export const emptyStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.background,
-  } as ViewStyle,
+  },
 
   emptyImage: {
     width: device.width * 0.9,
     height: device.height * 0.4,
     resizeMode: 'contain',
-  } as ImageStyle,
+  },
 });

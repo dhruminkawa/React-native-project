@@ -36,7 +36,7 @@ const LiveScreen = () => {
       ]}
     >
       <Image
-        source={require('@assets/images/coming_soon3.png')}
+        source={require('@assets/images/coming_soon2.jpg')}
         style={emptyStyles.emptyImage}
       />
     </View>
