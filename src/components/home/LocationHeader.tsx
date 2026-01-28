@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React, { FC } from 'react'
 import { useSharedState } from '@features/tabs/SharedContext'
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated'
@@ -36,7 +36,7 @@ const LocationHeader:FC = () => {
                     Erangle, Pochinki
                 </CustomText>
                 <Icon
-                 name="location"
+                 name="chevron-down"
                  color={textColor}
                  iconFamily="Ionicons"
                  size={18}
@@ -46,6 +46,28 @@ const LocationHeader:FC = () => {
                     Mumabai Borivali fnk
                  </CustomText>
             </View>
+        </View>
+        
+        <View style={homeStyles.flexRowGap}>
+            <TouchableOpacity  style={homeStyles.translation}>
+                <Image
+                 source={require('@assets/icons/translation.png')}
+                 style={homeStyles.translationIcon}
+                 />
+                </TouchableOpacity>
+
+                 <TouchableOpacity style={homeStyles.profileAvatar}>
+                    <Image
+                    source={require('@assets/icons/golden_circle.png')}
+                    style={homeStyles.goldenCircle}
+                    />
+                    <Image
+                    source={require('@assets/images/user.jpg')}
+                    style={homeStyles.profileImage}
+                    />
+                 </TouchableOpacity>
+
+           
         </View>
 
       </View>

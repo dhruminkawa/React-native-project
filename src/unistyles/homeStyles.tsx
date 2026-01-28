@@ -103,7 +103,7 @@ export const homeStyles = StyleSheet.create({
         alignSelf: 'center',
         height: 50,
         borderRadius: border.full,
-    } as ViewStyle,
+    } as ImageStyle,
 
     profileAvatar: {
         width: 40,
