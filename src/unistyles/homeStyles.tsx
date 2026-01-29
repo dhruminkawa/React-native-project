@@ -169,31 +169,31 @@ export const homeStyles = StyleSheet.create({
         flexDirection: 'row',
     } as ViewStyle,
 
-//    leftTab: (isActive: boolean) => ({
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         flexDirection: 'row',
-//         padding: 5,
-//         paddingHorizontal: 10,
-//         backgroundColor: isActive ? colors.tertiary : colors.background,
-//         borderWidth: 1,
-//         borderColor: isActive ? colors.active : colors.border,
-//         borderTopLeftRadius: 8,
-//         borderBottomLeftRadius: 8
-//     }),
-//     rightTab: (isActive: boolean) => ({
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         gap: 5,
-//         padding: 5,
-//         paddingHorizontal: 10,
-//         flexDirection: 'row',
-//         backgroundColor: isActive ? colors.tertiary : colors.background,
-//         borderWidth: 1,
-//         borderColor: isActive ? colors.active : colors.border,
-//         borderTopRightRadius: 8,
-//         borderBottomRightRadius: 8
-//     }),
+   leftTab: (isActive: boolean) => ({
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        padding: 5,
+        paddingHorizontal: 10,
+        backgroundColor: isActive ? colors.tertiary : colors.background,
+        borderWidth: 1,
+        borderColor: isActive ? colors.active : colors.border,
+        borderTopLeftRadius: 8,
+        borderBottomLeftRadius: 8
+    }),
+    rightTab: (isActive: boolean) => ({
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 5,
+        padding: 5,
+        paddingHorizontal: 10,
+        flexDirection: 'row',
+        backgroundColor: isActive ? colors.tertiary : colors.background,
+        borderWidth: 1,
+        borderColor: isActive ? colors.active : colors.border,
+        borderTopRightRadius: 8,
+        borderBottomRightRadius: 8
+    }),
 
 })
 

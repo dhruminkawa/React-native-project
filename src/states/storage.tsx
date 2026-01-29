@@ -1,6 +1,6 @@
 // import MMKV from 'react-native-mmkv'
 // import {Storage} from 'redux-persist'
-// const storage =new MMKV();
+// const storage =new MMKV  ();
 
 // // export const token_storage = new MMKV({
 // //     id: 'user_storage',
@@ -26,25 +26,28 @@
 
 
 
-import MMKV from 'react-native-mmkv'
-import type { Storage } from 'redux-persist'
+// import { MMKV } from 'react-native-mmkv'
+// import { MMKV } from 'react-native-mmkv'
+// const { MMKV } = require('react-native-mmkv')
+// import {Storage} from 'redux-persist'
 
-const storage = new MMKV()
+// const mmkv = new MMKV()
 
-const reduxStorage: Storage = {
-  setItem: (key, value) => {
-    storage.set(key, value)
-    return Promise.resolve()
-  },
-  getItem: (key) => {
-    const value = storage.getString(key)
-    return Promise.resolve(value ?? null)
-  },
-  removeItem: (key) => {
-    storage.delete(key)
-    return Promise.resolve()
-  },
-}
+// const reduxStorage = {
+//   setItem: (key: string, value: string) => {
+//     mmkv.set(key, value)
+//     return Promise.resolve()
+//   },
 
-export default reduxStorage
+//   getItem: (key: string) => {
+//     const value = mmkv.getString(key)
+//     return Promise.resolve(value ?? null)
+//   },
 
+//   removeItem: (key: string) => {
+//     mmkv.delete(key)
+//     return Promise.resolve()
+//   },
+// }
+
+// export default reduxStorage

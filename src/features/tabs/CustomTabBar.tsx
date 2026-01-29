@@ -232,11 +232,11 @@ import { Colors, screenWidth } from '@unistyles/Constants';
 import { tabStyles } from '@unistyles/tabStyles';
 import ScalePress from '@components/ui/ScalePress';
 import { DeliveryTabIcon, DiningTabIcon, LiveTabIcon, ReorderTabIcon } from './TabIcon';
-import { useAppSelector } from '@states/reduxHook';
+// import { useAppSelector } from '@states/reduxHook';
 
 const CustomTabBar: FC<BottomTabBarProps> = (props) => {
-     const isVegMode = useAppSelector(state => state.user.isVegMode)
-
+    //  const isVegMode = useAppSelector(state => state.user.isVegMode)
+          const isVegMode=true
   const { scrollY } = useSharedState();
   const { state, navigation } = props;
   const bottom = useSafeAreaInsets();
