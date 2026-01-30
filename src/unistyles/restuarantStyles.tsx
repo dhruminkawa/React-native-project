@@ -70,7 +70,7 @@ export const restaurantStyles = StyleSheet.create({
   backToTopButton: {
     position: "absolute",
     alignSelf: "center",
-    top: device.height * 0.055,
+    // top: device.height * 0.055,
     flexDirection: "row",
     alignItems: "center",
     gap: 4,

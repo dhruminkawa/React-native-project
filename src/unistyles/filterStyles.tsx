@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Colors } from './Constants';
 
 export const filterStyles = StyleSheet.create({
   filterBar: {
@@ -18,9 +19,9 @@ export const filterStyles = StyleSheet.create({
     elevation: 5,
     borderRadius: 8,
     shadowRadius: 1.5,
-    shadowColor: undefined, // was colors.lightText
-    borderColor: undefined, // was colors.border
-    backgroundColor: undefined, // was colors.background
+    shadowColor: Colors.text, 
+    borderColor: Colors.border, 
+    backgroundColor: Colors.background, 
     borderWidth: 1,
     marginRight: 10,
   },

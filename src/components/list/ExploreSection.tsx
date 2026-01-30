@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import { homeStyles } from '@unistyles/homeStyles'
 import CustomText from '@components/global/CustomText'
 import { Colors } from '@unistyles/Constants'
+import RecommendedList from './RecommendedList'
+import BreakerText from '@components/ui/BreakerText'
+import RegularFoodList from './RegularFoodList'
 
 const ExploreSection = () => {
   const [tabSelected, setSelectedTab] = useState(1)
@@ -23,6 +26,11 @@ const ExploreSection = () => {
         </Pressable>
 
       </View>
+
+      <RecommendedList />
+      <BreakerText text="WHAT'S ON YOUR MIND" />
+       <RegularFoodList />
+      <BreakerText text="ALL RESTAURANTS" />
       
     </View>
   )
