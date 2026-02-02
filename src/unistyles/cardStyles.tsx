@@ -7,7 +7,6 @@ export const cardStyles = StyleSheet.create({
     recommendedContainer: {
         marginTop: 25,
         paddingLeft: 10,
-        backgroundColor:"#fff"
     },
     mainPadding: {
         padding: 10

@@ -12,6 +12,7 @@
     "generate-apk": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
+    "@fortawesome/react-native-fontawesome": "^0.3.2",
     "@react-native-community/blur": "^4.4.1",
     "@react-native-vector-icons/ionicons": "^12.3.0",
     "@react-native-vector-icons/material-icons": "^12.4.0",
@@ -28,7 +29,6 @@
     "react-native-gesture-handler": "^2.30.0",
     "react-native-get-random-values": "^2.0.0",
     "react-native-linear-gradient": "^2.8.3",
-    "react-native-mmkv": "^4.1.1",
     "react-native-nitro-modules": "^0.33.2",
     "react-native-reanimated": "^4.2.1",
     "react-native-responsive-fontsize": "^0.5.1",
@@ -41,7 +41,6 @@
     "react-native-vector-icons": "^10.3.0",
     "react-native-worklets": "^0.7.2",
     "react-redux": "^9.2.0",
-    "redux-persist": "^6.0.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {

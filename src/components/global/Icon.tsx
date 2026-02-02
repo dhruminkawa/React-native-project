@@ -31,12 +31,13 @@
 import React, { FC } from 'react';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import MaterialIcons from '@react-native-vector-icons/material-icons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 interface IconProps {
   color?: string;
   size: number;
   name: string;
-  iconFamily: 'Ionicons' | 'MaterialIcons';
+  iconFamily: 'Ionicons' | 'MaterialIcons' | 'FontAwesome'
 }
 
 const Icon: FC<IconProps> = ({ color, size, name, iconFamily }) => {
@@ -47,7 +48,9 @@ const Icon: FC<IconProps> = ({ color, size, name, iconFamily }) => {
   if (iconFamily === 'MaterialIcons') {
     return <MaterialIcons name={name} size={size} color={color} />;
   }
-
+  if (iconFamily === 'FontAwesome') {
+    return <FontAwesome name={name} size={size} color={color} />
+  }
   return null;
 };
 

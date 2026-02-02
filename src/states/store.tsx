@@ -26,3 +26,17 @@
 
 // export type RootState = ReturnType<typeof store.getState>;
 // export type AppDispatch = typeof store.dispatch;
+
+
+import { configureStore } from '@reduxjs/toolkit';
+import rootReducer from './rootReducer';
+ 
+// ✅ Simple store WITHOUT redux-persist
+export const store = configureStore({
+  reducer: rootReducer,
+  // Middleware automatically configure ho jayega
+});
+ 
+// Types for TypeScript
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
