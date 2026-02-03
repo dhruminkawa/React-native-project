@@ -1,6 +1,6 @@
 import { Platform } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { StyleSheet } from "react-native-unistyles";
+import { StyleSheet } from "react-native";
 import { defaultTheme } from "./unistyles";
 
 const { device, border, colors } = defaultTheme;

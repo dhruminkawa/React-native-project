@@ -81,7 +81,7 @@ const AddButton:FC<{item: any; restaurant: any}> = ({item, restaurant}) => {
             dispatch(
                 removeCustomizableItem({
                     restaurant_id: restaurant?.id,
-                    customizationid: cart?.customizations![0]?.id,
+                    customizationId: cart?.customizations![0]?.id, 
                     itemId:item?.id,
                 }),
             );
@@ -155,4 +155,4 @@ const AddButton:FC<{item: any; restaurant: any}> = ({item, restaurant}) => {
 
 }
 
-export default  memo(AddButton);
+export default  (AddButton);
