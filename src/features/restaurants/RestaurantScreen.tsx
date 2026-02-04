@@ -9,6 +9,7 @@ import { restaurantItemsData, restaurantsItemfiltersOption } from '@utils/dummyD
 import RestaurantHeader from '@components/restaurant/RestaurantHeader';
 import DottedLine from '@components/list/DottedLine';
 import FoodCard from '@components/restaurant/FoodCard';
+import SearchAndOffers from '@components/restaurant/SearchAndOffers';
 
 const RestaurantScreen:FC = () => {
   const route = useRoute() as any;
@@ -46,6 +47,8 @@ const RestaurantScreen:FC = () => {
          )}
          contentContainerStyle={restaurantHeaderStyles.scrollContainer}
          />
+
+         <SearchAndOffers item={restaurant} />
     </CustomSafeAreaView>
       
     </>

@@ -360,6 +360,7 @@ import { tabStyles } from '@unistyles/tabStyles'
 import ScalePress from '@components/ui/ScalePress'
 import { DeliveryTabIcon, DiningTabIcon, LiveTabIcon, ReorderTabIcon } from './TabIcon'
 import { useAppSelector } from '@states/reduxHook'
+import CartHOC from '@features/checkout/CartHOC'
  
 const CustomTabBar = (props: BottomTabBarProps) => {
     const isVegMode = useAppSelector(state => state.user.isVegMode);
@@ -398,7 +399,8 @@ const CustomTabBar = (props: BottomTabBarProps) => {
     })
  
     return (
-        <>
+        <> 
+        {!isLiveTabFocused && <CartHOC />}
             <Animated.View
                 style={[
                     tabStyles.tabBarContainer,
